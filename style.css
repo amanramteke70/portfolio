@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* hero section */
+
+#hero {
+    background-image: url(./img/ng.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    opacity: 1.1;
+    z-index: 1;
+}
+
+#hero ::after {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+#hero h1 {
+    display: block;
+    width: 26vw;
+    position: relative;
+    color: transparent;
+    font-size: 4rem;
+    animation: animation1 .5s ease forwards;
+    animation-delay: 3s;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hero h1:nth-child(1) {
+    animation-delay: 1s;
+    
+}
+
+#hero h1:nth-child(2) {
+    animation-delay: 2s;
+    
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: crimson;
+}
+
+.cta {
+    border: 2px solid crimson;
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: .3s ease;
+    color: crimson;
+    /* animation: animation1 1s ease 1s forwards; */
+}
+
+.cta:hover {
+    background-color: crimson;
+    color: white;
+}
+
+@keyframes animation1 {
+    100% {
+        color: white;
+    }
+    
+}
+/* end hero section */
+
+/* about */
+
+#about .col-left{
+    width: 291px;
+    height: 361px;
+}
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  100px 20px;
+}
+
+#about .col-right{
+    font-family: 'Josefin Slab', serif;
+    width: 100%;
+    font-size: 34px;
+    margin-top: -45px;
+}
+ 
+#about .col-right h2{
+
+    color: red;
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10px;
+    font-size: 3rem;
+
+}
+
+#about .col-right p{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 23px;
+}
+
+#about .col-left .about-img{
+    position: relative;
+}
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: -37px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+ img{
+     border: 8px solid white;
+ }
+/* end about */
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    color: white;
+    padding: 6px;
+    height: 2vh;
+}
+
